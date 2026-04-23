@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Jadoo Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <div class="auth-shell">
+        <section class="auth-visual">
+            <a class="logo" href="index.html">Jadoo</a>
+            <p class="section-label">Welcome Back</p>
+            <h1>Login to manage your next journey.</h1>
+            <p class="auth-subtitle">Access your booking details, saved destinations, and upcoming travel plans from one place.</p>
+            <ul>
+                <li>Secure password-based login</li>
+                <li>Local backend ready for your forms</li>
+                <li>Fast access to your travel dashboard</li>
+            </ul>
+        </section>
+
+        <section class="auth-card">
+            <h2>Login</h2>
+            <p class="auth-subtitle">Enter your email and password to continue.</p>
+            <form class="auth-form" id="loginForm">
+                <input type="email" id="loginEmail" name="email" placeholder="Email address" required>
+                <input type="password" id="loginPassword" name="password" placeholder="Password" minlength="6" required>
+                <button class="primary-btn" type="submit">Login</button>
+            </form>
+            <p class="form-message" id="authMessage" aria-live="polite"></p>
+            <p class="auth-footer">New here? <a href="signup.html">Create an account</a></p>
+        </section>
+    </div>
+
+    <script src="site.js"></script>
+</body>
+</html>
